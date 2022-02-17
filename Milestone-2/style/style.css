@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.ms_header{
+    background-color: #2e3a46;
+    height: 50px;
+}
+
+.ms_icon > img{
+    width: 35px;
+    padding: 5px 0px;
+}
+.ms_icon {
+    vertical-align: center;
+}
+
+main{
+    height: calc(100vh - 50px);
+    background-color: #1f2d3a;
+    
+}
+
+.container-dischi{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ms_boxdisco{
+    color: white;
+    text-align: center;
+    height: 350px;
+    background-color: #2e3a46;
+    margin-top: 20px; 
+    width:calc((100% - 150px) / 6);
+}
+
+.ms_boxdisco img{
+    width: 150px;
+    padding: 10px 0px;
+}
+
+h4{
+    padding-bottom: 15px;
+  }
+  p{
+    margin-top: 20px;
+    color: gray ;
+    font-size: 13px;
+  }

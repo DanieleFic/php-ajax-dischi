@@ -48,8 +48,8 @@ $database = [
 ?>
 
 
-<style  lang="scss" scoped>
-@import "../../assets/style/vars.scss";
+<style>
+
     *{
         box-sizing: border-box;
         margin:0;
@@ -91,7 +91,7 @@ $database = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vue-Dischi-Milestone1</title>
 </head>
 <body>
     <main>
@@ -102,7 +102,7 @@ $database = [
                     echo "<div class='ms_boxdisco'>";
                         /* echo "<p>".$element["title"]."</p>"; */
                         echo '<img src="'.$element["poster"].'"/>';
-                        echo  "<p>".$element["title"]."</p>";
+                        echo  "<h4>".$element["title"]."</h4>";
                         echo "<div>";
                             echo  "<p>".$element["author"]."</p>";
                             echo  "<p>".$element["year"]."</p>";
