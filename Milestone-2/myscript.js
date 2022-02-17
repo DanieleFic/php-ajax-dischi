@@ -3,7 +3,7 @@ let app = new Vue({
     data: {
     Arraydischi: [],
     Arraydischigenre : [],
-    valoregenere : null,
+    valoregenere : "",
     },
 
     mounted:function () {
