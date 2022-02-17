@@ -21,10 +21,21 @@
         </header>
     
         <main>
-            <button @click="creaEmail">Genera 10 email</button> 
+            <div class="box">
+                <select v-model="valoregenere">
+                    <option value="Null" selected>Tutti</option>
+                    <option v-for="(elemento, i) in Arraydischigenre"  :value="elemento" >{{ elemento }}</option>
+                <!--<option value="Null">Tutti</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Metal">Metal</option>-->
+                </select>
+            </div>
             <div class="container-dischi">
                 <div 
-                v-for="(item, indice) in Arraydischi"
+                v-for="(item, indice) in filtraGeneri"
+                
                 class='ms_boxdisco'>
                     <img :src="item.poster"/>
                     <h2>{{item.title}}</h2>

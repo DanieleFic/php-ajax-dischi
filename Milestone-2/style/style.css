@@ -20,7 +20,6 @@
 main{
     height: calc(100vh - 50px);
     background-color: #1f2d3a;
-    
 }
 
 .container-dischi{
@@ -36,7 +35,7 @@ main{
     text-align: center;
     height: 350px;
     background-color: #2e3a46;
-    margin-top: 20px; 
+    margin-top: 30px; 
     width:calc((100% - 150px) / 6);
 }
 
@@ -47,9 +46,15 @@ main{
 
 h4{
     padding-bottom: 15px;
-  }
-  p{
+}
+
+p{
     margin-top: 20px;
     color: gray ;
     font-size: 13px;
-  }
+}
+
+.box{
+    padding-top: 30px;
+    text-align: center;
+}
