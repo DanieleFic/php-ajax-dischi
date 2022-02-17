@@ -9,69 +9,33 @@
     <title>Vue-dischi Milestone 2</title>
 </head>
 <body>
-    <header>
-        <div class="ms_header">
-            <div class="container-fluid">
-                <div class="ms_icon">
-                    <img src="./img/Spotify_icon.png" alt="">
+    <div id="app">
+        <header>
+            <div class="ms_header">
+                <div class="container-fluid">
+                    <div class="ms_icon">
+                        <img src="./img/Spotify_icon.png" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="container-dischi">
-            <div class='ms_boxdisco'>
-                <img src="https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg"/>
-                <h2>Nome Disco</h2>
-                <div>
-                    <p>Nome Artista</p>
-                    <p>Anno disco</p>
+        </header>
+    
+        <main>
+            <button @click="creaEmail">Genera 10 email</button> 
+            <div class="container-dischi">
+                <div 
+                v-for="(item, indice) in Arraydischi"
+                class='ms_boxdisco'>
+                    <img :src="item.poster"/>
+                    <h2>{{item.title}}</h2>
+                    <div>
+                        <p>{{item.author}}</p>
+                        <p>{{item.year}}</p>
+                    </div>
                 </div>
             </div>
-            <div class='ms_boxdisco'>
-                <img src="https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg"/>
-                <h2>Nome Disco</h2>
-                <div>
-                    <p>Nome Artista</p>
-                    <p>Anno disco</p>
-                </div>
-            </div>
-            <div class='ms_boxdisco'>
-                <img src="https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg"/>
-                <h2>Nome Disco</h2>
-                <div>
-                    <p>Nome Artista</p>
-                    <p>Anno disco</p>
-                </div>
-            </div>
-            <div class='ms_boxdisco'>
-                <img src="https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg"/>
-                <h2>Nome Disco</h2>
-                <div>
-                    <p>Nome Artista</p>
-                    <p>Anno disco</p>
-                </div>
-            </div>
-            <div class='ms_boxdisco'>
-                <img src="https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg"/>
-                <h2>Nome Disco</h2>
-                <div>
-                    <p>Nome Artista</p>
-                    <p>Anno disco</p>
-                </div>
-            </div>
-            <div class='ms_boxdisco'>
-                <img src="https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg"/>
-                <h2>Nome Disco</h2>
-                <div>
-                    <p>Nome Artista</p>
-                    <p>Anno disco</p>
-                </div>
-            </div>
-            
-            
-        </div>
+    </div>
+    
     
     </main>
 
@@ -79,5 +43,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./myscript.js"></script>
 </body>
 </html>
